@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <title>Slim PHP & AngularJS</title>
+        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="./assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/node_modules/angular-loading-bar/build/loading-bar.min.css">
+        <link rel="stylesheet" href="./assets/css/site/style.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Project name</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a ui-sref="home">Home</a></li>
+                        <li class="active"><a ui-sref="contato">Contato</a></li>
+                    </ul>
+                </div><!--/.navbar-collapse -->
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <div class="container-fluid">
+                <ui-view></ui-view>
+            </div>
+        </div>
+
+    </body>
+    <script src="./assets/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/node_modules/angular/angular.min.js"></script>
+    <script src="./assets/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="./assets/node_modules/angular-resource/angular-resource.min.js"></script>
+    <script src="./assets/node_modules/angular-animate/angular-animate.min.js"></script>
+    <script src="./assets/node_modules/angular-loading-bar/build/loading-bar.min.js"></script>
+
+    <script src="./assets/js/site/main.js"></script>
+    <script src="./assets/js/site/controllers/controllers.js"></script>
+</html>

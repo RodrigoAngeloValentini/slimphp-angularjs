@@ -1,0 +1,40 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  height: 100% !important;
+  width: 100% !important;
+}
+.content{
+  padding: 10px !important;
+  height: auto !important;
+}
+.ui-content{
+  height: 100% !important;
+  width: 100% !important;
+}
+object[type*='application/gas-events'] { display: none; }
+
+table{
+  .td-id{
+    width: 10%;
+  }
+  .td-actions{
+    width: 20%;
+  }
+}
+
+#loading-bar .bar {
+  background: #33ba3a;
+  height: 4px;
+}
+
+#loading-bar-spinner .spinner-icon {
+  width: 18px;
+  height: 18px;
+  border: solid 4px transparent;
+  border-top-color: #cadd22;
+  border-left-color: #cadd22;
+  border-radius: 10px;
+}
+
+@import "login";
